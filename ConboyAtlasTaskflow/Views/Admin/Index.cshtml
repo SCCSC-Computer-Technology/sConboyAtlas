@@ -6,9 +6,50 @@
 
 <p>Admin needs to do what..?</p>
 
-<p>Admin needs to have an overview of how many instructors are registered.
-
-    Admin also need to know how many students are registered.
-
+<p>
     And admin needs crud functionality for instructors and students.
 </p>
+
+@* count stats *@
+<div class="row g-4">
+    
+    @* instructor *@
+    <div class="col-12 col-sm-6">
+        <div class="card h-100 border-0 bg-white p-4 shadow-sm" style="border-radius: 16px;">
+            <div class="d-flex flex-column justify-content-between h-100">
+                <span class="text-secondary small text-uppercase tracking-wider mb-2">Instructors</span>
+                <span class="display-4 fw-light text-dark lh-1 tracking-tight">0</span>
+            </div>
+        </div>
+    </div>
+
+    @* student *@
+    <div class="col-12 col-sm-6">
+        <div class="card h-100 border-0 bg-white p-4 shadow-sm" style="border-radius: 16px;">
+            <div class="d-flex flex-column justify-content-between h-100">
+                <span class="text-secondary small text-uppercase tracking-wider mb-2">Students</span>
+                <span class="display-4 fw-light text-dark lh-1 tracking-tight">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<div>
+    <a class="btn btn-primary">Create Instructor</a>
+
+</div>
+
+
+@* here, I'll put a list of current instructors, their total courses, and total students. *@
+@* They should be clickable rows that take you to an edit section. The edit section should just *@
+@* show instructor details.... and then give the option to delete from there. *@
+
+
+<style>
+    .tracking-tight { letter-spacing: -0.04em; }
+    .tracking-wider { letter-spacing: 0.12em; font-size: 0.72rem; font-weight: 600; }
+</style>
+
+
