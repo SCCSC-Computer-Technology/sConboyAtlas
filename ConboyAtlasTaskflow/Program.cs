@@ -11,7 +11,18 @@ namespace ConboyAtlasTaskflow
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+            var connectionString = "";
+
+            if (OperatingSystem.IsMacOS())
+            {
+                connectionString = builder.Configuration.GetConnectionString("DefaultConnectionMac") ?? throw new InvalidOperationException("Connection string 'DefaultConnectionMac' not found.");
+            }
+            else
+            {
+                connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            }
+
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
