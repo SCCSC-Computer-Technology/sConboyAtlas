@@ -1,4 +1,0 @@
-C:\Users\Shawn\Documents\ConboyAtlasTaskflow\wwwroot\images\app-store-badge.svg
-C:\Users\Shawn\Documents\ConboyAtlasTaskflow\wwwroot\images\demo-screen.mp4
-C:\Users\Shawn\Documents\ConboyAtlasTaskflow\wwwroot\images\google-play-badge.svg
-C:\Users\Shawn\Documents\ConboyAtlasTaskflow\wwwroot\images\portrait_black.png

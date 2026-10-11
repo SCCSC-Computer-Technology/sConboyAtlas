@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shawn\\Documents\\ConboyAtlasTaskflow\\ConboyAtlasTaskflow.csproj": {}
+    "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\ConboyAtlasTaskflow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shawn\\Documents\\ConboyAtlasTaskflow\\ConboyAtlasTaskflow.csproj": {
+    "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\ConboyAtlasTaskflow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shawn\\Documents\\ConboyAtlasTaskflow\\ConboyAtlasTaskflow.csproj",
+        "projectUniqueName": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\ConboyAtlasTaskflow.csproj",
         "projectName": "ConboyAtlasTaskflow",
-        "projectPath": "C:\\Users\\Shawn\\Documents\\ConboyAtlasTaskflow\\ConboyAtlasTaskflow.csproj",
+        "projectPath": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\ConboyAtlasTaskflow.csproj",
         "packagesPath": "C:\\Users\\Shawn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shawn\\Documents\\ConboyAtlasTaskflow\\obj\\",
+        "outputPath": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
