@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Create Instructor";
+}
+
+<h1>Create Instructor</h1>
+
+@* need a form to take in instructor data *@
+
+<div style="max-width: 500px; margin-top: 2rem;">
+  <form method="post">
+    @* first name *@
+    <div class="mb-3">
+      <label for="FirstName" class="form-label fw-semibold text-secondary">First Name</label>
+      <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" placeholder="John" required>
+    </div>
+
+    @* last name *@
+    <div class="mb-3">
+      <label for="LastName" class="form-label fw-semibold text-secondary">Last Name</label>
+      <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" placeholder="Doe" required>
+    </div>
+
+    @* email *@
+    <div class="mb-3">
+      <label for="Email" class="form-label fw-semibold text-secondary">Email Address</label>
+      <input type="email" class="form-control form-control-lg" id="Email" name="Email" placeholder="name@example.com" required>
+    </div>
+
+    @* subject *@
+    <div class="mb-4">
+      <label for="Subject" class="form-label fw-semibold text-secondary">Subject / Department</label>
+      <input type="text" class="form-control form-control-lg" id="Subject" name="Subject" placeholder="e.g., Computer Science" required>
+    </div>
+
+    @* submit button *@
+    <button type="submit" class="btn btn-primary btn-lg px-5">
+      Create Instructor
+    </button>
+  </form>
+</div>
+

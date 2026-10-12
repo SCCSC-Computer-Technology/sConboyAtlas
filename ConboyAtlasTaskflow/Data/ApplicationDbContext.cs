@@ -3,7 +3,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ConboyAtlasTaskflow.Data
 {
-    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext(options)
+    public class ApplicationDbContext : IdentityDbContext
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+        }
+        
+        // add link to db tables
+        // if your variable name here is getting error. stooopid ass model wasn't made
+        // public. dumbahhhhh.
+        public DbSet<InstructorModel> Instructors { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+            // reference to actual db table
+            builder.Entity<InstructorModel>()
+                .ToTable("Instructors");
+        }
     }
 }

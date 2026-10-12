@@ -1,3 +1,6 @@
+@using ConboyAtlasTaskflow.Data
+@model IEnumerable<InstructorModel>;
+
 @{
     ViewData["Title"] = "Admin Dashboard";
 }
@@ -36,20 +39,50 @@
 
 <br />
 
-<div>
-    <a class="btn btn-primary">Create Instructor</a>
-
+<div class="d-flex justify-content-between align-items-center w-100">
+    <h2 class="m-0">Active Instructors</h2>
+    <a class="btn btn-primary" asp-controller="Admin" asp-action="Create">Create Instructor</a>
 </div>
 
-
-@* here, I'll put a list of current instructors, their total courses, and total students. *@
-@* They should be clickable rows that take you to an edit section. The edit section should just *@
-@* show instructor details.... and then give the option to delete from there. *@
+<hr class="text-muted my-4">
 
 
-<style>
-    .tracking-tight { letter-spacing: -0.04em; }
-    .tracking-wider { letter-spacing: 0.12em; font-size: 0.72rem; font-weight: 600; }
-</style>
+@foreach (var instructor in Model)
+{
+    <p>@instructor.LastName</p>
+}
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Subject</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Charles</td>
+      <td>Thompson</td>
+      <td>cthompson@sccsc.edu</td>
+      <td>CPT</td>
+    </tr>
+    <tr>
+      <td>Angela</td>
+      <td>Watkins</td>
+      <td>awatkins@sccsc.edu</td>
+      <td>CPT</td>
+    </tr>
+    <tr>
+      <td>Karen</td>
+      <td>Lee</td>
+      <td>klee@sccsc.edu</td>
+      <td>MAT</td>
+    </tr>
+  </tbody>
+</table>
+
 
 

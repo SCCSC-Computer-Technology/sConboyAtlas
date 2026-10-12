@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConboyAtlasTaskflow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa96a10b99d8939ca007b797c9a4d7d88eac148c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+439a220ad400bb43ec1b535b28b320331fec6155")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConboyAtlasTaskflow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConboyAtlasTaskflow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
