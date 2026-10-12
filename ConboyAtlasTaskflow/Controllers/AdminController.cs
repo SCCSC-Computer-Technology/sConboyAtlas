@@ -9,7 +9,7 @@ namespace ConboyAtlasTaskflow.Controllers
     public class AdminController : Controller
     {
 
-        // db context reference
+        // db context reference ________________________________________________________
         private readonly ApplicationDbContext _context;
 
         public AdminController(ApplicationDbContext context)
@@ -17,7 +17,7 @@ namespace ConboyAtlasTaskflow.Controllers
             _context = context;
         }
 
-        // GET: AdminController
+        // index section _______________________________________________________________
         public ActionResult Index()
         {
             var instructors = _context.Instructors.ToList();
@@ -25,7 +25,7 @@ namespace ConboyAtlasTaskflow.Controllers
             return View(instructors);
         }
 
-        // create section ____________________________________________________________
+        // create section ______________________________________________________________
         // create instructor page
         public IActionResult Create()
         {
@@ -39,9 +39,51 @@ namespace ConboyAtlasTaskflow.Controllers
             _context.Instructors.Add(instructor);
             _context.SaveChanges();
 
+            return RedirectToAction("Index");
+        }
+
+        // edit section ________________________________________________________________
+        // gonna need two sections similar to the create section
+
+        public IActionResult Edit(int id)
+        {
+            var instructor = _context.Instructors.Find(id);
+
+            // if id isn't found
+            if (instructor == null)
+            {
+                return NotFound();
+            }
+
+            return View(instructor);
+        }
+
+        // post action to save the edit
+        [HttpPost]
+        public IActionResult Edit(InstructorModel instructor)
+        {
+            _context.Instructors.Update(instructor);
+            _context.SaveChanges();
 
             return RedirectToAction("Index");
         }
+
+        // delete section ________________________________________________________________
+        public IActionResult Delete(int id)
+        {
+            var instructor = _context.Instructors.Find(id);
+
+            if (instructor == null)
+            {
+                return NotFound();
+            }
+
+            _context.Instructors.Remove(instructor);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
 
     }
 }
