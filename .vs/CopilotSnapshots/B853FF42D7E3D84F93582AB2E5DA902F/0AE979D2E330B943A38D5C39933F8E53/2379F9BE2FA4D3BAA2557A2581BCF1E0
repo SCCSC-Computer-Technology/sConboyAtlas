@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<header class="masthead" id="page-top">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                    <h1 class="display-1 lh-1 mb-3">Welcome to Atlas TaskFlow.</h1>
+                    <p class="lead fw-normal text-muted mb-5">
+                        Bridging the gap between personal planning and classroom tracking.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="masthead-device-mockup">
+                    <!-- Fixed xmlns URL below -->
+                    <svg class="circle" viewBox="0 0 100 100" xmlns="http://w3.org">
+                        <defs>
+                            <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                <stop class="gradient-start-color" offset="0%"></stop>
+                                <stop class="gradient-end-color" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+
+                    <!-- Fixed xmlns URL below -->
+                    <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://w3.org">
+                        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+                    </svg>
+
+                    <!-- Fixed xmlns URL below -->
+                    <svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://w3.org">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg>
+
+                    <div>
+                        <div>
+                            <img src="/img/laptopScreen.png" class="mbp-frame" alt="Laptop display frame">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="features" class="py-5">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="row gx-5 gy-5 text-center">
+                    <div class="col-md-6 px-lg-4">
+                        <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
+                        <h3 class="font-alt">Simple Task Management</h3>
+                        <p class="text-muted mb-0">
+                            Simply create a new task, or see the assigned tasks from your instructor.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 px-lg-4">
+                        <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
+                        <h3 class="font-alt">Flexible Use</h3>
+                        <p class="text-muted mb-0">
+                            Atlas is intended for the use of both instructors and students alike.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 px-lg-4">
+                        <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
+                        <h3 class="font-alt">Free to Use</h3>
+                        <p class="text-muted mb-0">
+                            Thanks to our sponsor, Mr. T, Atlas will be available at zero cost!
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 px-lg-4">
+                        <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
+                        <h3 class="font-alt">Open Source</h3>
+                        <p class="text-muted mb-0">
+                            Since this is a class project on our GitHub, anyone can contribute.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

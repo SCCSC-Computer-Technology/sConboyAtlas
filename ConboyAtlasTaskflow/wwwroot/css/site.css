@@ -44,6 +44,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     margin: 0;
     background: var(--lux-bg);
@@ -177,6 +179,7 @@ header {
 }
 
 main {
+    flex: 1 0 auto;
     padding-block: 2.5rem 3.5rem;
 }
 
@@ -512,7 +515,7 @@ section {
 }
 
 .footer {
-/*    padding-block: 1.25rem;*/
+    flex-shrink: 0;
     color: var(--lux-text-muted) !important;
     background-color: var(--lux-surface);
     border-color: var(--lux-border) !important;

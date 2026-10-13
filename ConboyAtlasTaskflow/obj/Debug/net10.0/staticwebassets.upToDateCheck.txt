@@ -70,6 +70,7 @@ wwwroot\lib\jquery\LICENSE.txt
 C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\css\site.css
 C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\favicon.ico
 C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\img\app-store-badge.svg
+C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\img\google-play-badge.svg
 C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\js\site.js
 C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -130,4 +131,3 @@ C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\lib\jquery\dis
 C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\wwwroot\img\google-play-badge.svg

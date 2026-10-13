@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|c:\\users\\shawn\\documents\\sconboyatlas\\conboyatlastaskflow\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|c:\\users\\shawn\\documents\\sconboyatlas\\conboyatlastaskflow\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|c:\\users\\shawn\\documents\\sconboyatlas\\conboyatlastaskflow\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|solutionrelative:controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|c:\\users\\shawn\\documents\\sconboyatlas\\conboyatlastaskflow\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|c:\\users\\shawn\\documents\\sconboyatlas\\conboyatlastaskflow\\views\\instructor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|solutionrelative:views\\instructor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|c:\\users\\shawn\\documents\\sconboyatlas\\conboyatlastaskflow\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3F325564-8240-D244-42C8-A86FAE95E50B}|ConboyAtlasTaskflow.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAACkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-13T15:12:47.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAADkAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-13T07:08:03.839Z",
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAG0CAAAAAAAAAAAAAH4CAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-13T14:48:08.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InstructorController.cs",
-              "DocumentMoniker": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Controllers\\InstructorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\InstructorController.cs",
-              "ToolTip": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Controllers\\InstructorController.cs",
-              "RelativeToolTip": "Controllers\\InstructorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T07:07:08.395Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAwwDAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T14:46:54.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Instructor\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Instructor\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Instructor\\Create.cshtml",
-              "RelativeToolTip": "Views\\Instructor\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\ConboyAtlasTaskflow\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAwwFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-13T07:06:48.636Z",
+              "WhenOpened": "2026-10-13T14:46:44.455Z",
               "EditorCaption": ""
             }
           ]
