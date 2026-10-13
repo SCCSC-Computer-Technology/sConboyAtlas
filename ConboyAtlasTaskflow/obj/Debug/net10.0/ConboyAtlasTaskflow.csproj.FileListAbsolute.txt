@@ -521,7 +521,6 @@ C:/Users/Shawn/Documents/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/22hsi1
 /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/nezrqnk58p-{0}-muycvpuwrr-muycvpuwrr.gz
 /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/v0zgfp0y55-{0}-87fc7y1x7t-87fc7y1x7t.gz
 /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/yfc7ypekbg-{0}-mlv21k5csn-mlv21k5csn.gz
-/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/tpi8orpvhs-{0}-m9nycslkcv-m9nycslkcv.gz
 /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/fvcowne8bx-{0}-61n19gt1b8-61n19gt1b8.gz
 /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/sydn79icwz-{0}-0t6hpcydlm-0t6hpcydlm.gz
 /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/22hsi1tcke-{0}-nj16fltpys-nj16fltpys.gz
@@ -598,3 +597,4 @@ C:/Users/Shawn/Documents/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/22hsi1
 /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/ConboyAtlasTaskflow.pdb
 /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/ConboyAtlasTaskflow.genruntimeconfig.cache
 /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/ref/ConboyAtlasTaskflow.dll
+/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/obj/Debug/net10.0/compressed/tpi8orpvhs-{0}-qoy13okgrx-qoy13okgrx.gz
