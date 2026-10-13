@@ -21,6 +21,9 @@ namespace ConboyAtlasTaskflow.Data
             // reference to actual db table
             builder.Entity<InstructorModel>()
                 .ToTable("Instructors");
+
+            builder.Entity<CourseModel>()
+                .ToTable("Courses");
         }
     }
 }

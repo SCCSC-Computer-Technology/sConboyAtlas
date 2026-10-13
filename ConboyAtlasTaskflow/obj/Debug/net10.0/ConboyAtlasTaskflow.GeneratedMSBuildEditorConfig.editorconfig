@@ -17,71 +17,72 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v10.0
+build_property.EntryPointFilePath = 
 build_property.RootNamespace = ConboyAtlasTaskflow
 build_property.RootNamespace = ConboyAtlasTaskflow
-build_property.ProjectDir = /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/
+build_property.ProjectDir = C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.RazorLangVersion = 9.0
+build_property.RazorLangVersion = 10.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow
+build_property.MSBuildProjectDirectory = C:\Users\Shawn\Documents\sConboyAtlas\ConboyAtlasTaskflow
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Admin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Admin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Admin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRWRpdC5jc2h0bWw=
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Admin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSW5kZXguY3NodG1s
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Instructor/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5zdHJ1Y3Rvci9DcmVhdGUuY3NodG1s
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Instructor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Instructor/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5zdHJ1Y3Rvci9JbmRleC5jc2h0bWw=
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Instructor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/shawnconboy/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-0e0ft9k8h2
+[C:/Users/Shawn/Documents/sConboyAtlas/ConboyAtlasTaskflow/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0a6btam6kf

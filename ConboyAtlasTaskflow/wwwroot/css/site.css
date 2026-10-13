@@ -512,7 +512,7 @@ section {
 }
 
 .footer {
-    padding-block: 1.25rem;
+/*    padding-block: 1.25rem;*/
     color: var(--lux-text-muted) !important;
     background-color: var(--lux-surface);
     border-color: var(--lux-border) !important;
