@@ -13,6 +13,7 @@ namespace ConboyAtlasTaskflow.Data
         // if your variable name here is getting error. stooopid ass model wasn't made
         // public. dumbahhhhh.
         public DbSet<InstructorModel> Instructors { get; set; }
+        public DbSet<CourseModel> Courses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

@@ -1,5 +1,5 @@
 @using ConboyAtlasTaskflow.Data
-@model IEnumerable<InstructorModel>;
+@model IEnumerable<CourseModel>;
 
 @{
     ViewData["Title"] = "Instructor Dashboard";
@@ -7,7 +7,7 @@
 
 <h1>Instructor Dashboard</h1>
 
-<a class="btn btn-primary" asp-controller="Instructor" asp-action="Create">Create Course</a>
+
 
 <p>Instructors can manage courses, assignments, and students here.</p>
 
@@ -16,18 +16,8 @@
 
 @* count stats *@
 <div class="row g-4">
-    
-    @* instructor *@
-    <div class="col-12 col-sm-6">
-        <div class="card h-100 border border-secondary-subtle bg-white p-4 shadow-sm" style="border-radius: 16px;">
-            <div class="d-flex flex-column justify-content-between h-100">
-                <span class="text-secondary small text-uppercase tracking-wider mb-2">Students</span>
-                <span class="display-4 fw-light text-dark lh-1 tracking-tight">0</span>
-            </div>
-        </div>
-    </div>
 
-    @* student *@
+    @* courses *@
     <div class="col-12 col-sm-6">
         <div class="card h-100 border border-secondary-subtle bg-white p-4 shadow-sm" style="border-radius: 16px;">
             <div class="d-flex flex-column justify-content-between h-100">
@@ -36,4 +26,16 @@
             </div>
         </div>
     </div>
+
+    @* students *@
+    <div class="col-12 col-sm-6">
+        <div class="card h-100 border border-secondary-subtle bg-white p-4 shadow-sm" style="border-radius: 16px;">
+            <div class="d-flex flex-column justify-content-between h-100">
+                <span class="text-secondary small text-uppercase tracking-wider mb-2">Students</span>
+                <span class="display-4 fw-light text-dark lh-1 tracking-tight">0</span>
+            </div>
+        </div>
+    </div>
 </div>
+
+

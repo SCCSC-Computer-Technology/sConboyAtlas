@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Instructor Courses";
+}
+
+<h1>Course Management</h1>
+
+<a class="btn btn-primary" asp-controller="Instructor" asp-action="Create">Create Course</a>
+
+<hr class="text-muted my-4">
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Course Name</th>
+            <th scope="col">Course Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model)
+        {
+            <tr class="position-relative">
+                <td>
+                    @* stretched link is used to make the row clickable, id is passed with click*@
+                    <a href="/Admin/Edit/@(course.Id)" class="stretched-link text-decoration-none text-dark">
+                        @course.Name
+                    </a>
+                </td>
+                <td>@course.Code</td>
+            </tr>
+        }
+    </tbody>
+</table>
