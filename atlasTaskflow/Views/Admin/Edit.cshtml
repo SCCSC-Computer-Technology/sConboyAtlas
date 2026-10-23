@@ -1,0 +1,49 @@
+@model atlasTaskflow.Models.InstructorModel
+
+@{
+    ViewData["Title"] = "Edit Instructor";
+}
+
+<h1>Create Instructor</h1>
+
+@* copy / paste from create page. need to add value attributes. *@
+
+<div style="max-width: 500px; margin-top: 2rem;">
+  <form method="post">
+
+    @* hidden id input *@
+    <input type="hidden" name="Id" id="Id" value="@Model.Id">
+
+    @* first name *@
+    <div class="mb-3">
+      <label for="FirstName" class="form-label fw-semibold text-secondary">First Name</label>
+      <input type="text" class="form-control form-control-lg" id="FirstName" name="FirstName" placeholder="John" value="@Model.FirstName" required>
+    </div>
+
+    @* last name *@
+    <div class="mb-3">
+      <label for="LastName" class="form-label fw-semibold text-secondary">Last Name</label>
+      <input type="text" class="form-control form-control-lg" id="LastName" name="LastName" placeholder="Doe" value="@Model.LastName" required>
+    </div>
+
+    @* email *@
+    <div class="mb-3">
+      <label for="Email" class="form-label fw-semibold text-secondary">Email Address</label>
+      <input type="email" class="form-control form-control-lg" id="Email" name="Email" placeholder="name@example.com" value="@Model.Email" required>
+    </div>
+
+    @* subject *@
+    <div class="mb-4">
+      <label for="Subject" class="form-label fw-semibold text-secondary">Subject / Department</label>
+      <input type="text" class="form-control form-control-lg" id="Subject" name="Subject" placeholder="e.g., Computer Science" value="@Model.Subject" required>
+    </div>
+
+    @* submit button *@
+    <button type="submit" class="btn btn-primary btn-lg px-5">
+      Update Details
+    </button>
+
+    <a class="btn btn-danger btn-lg" href="/Admin/Delete/@(Model.Id)">Delete Instructor</a>
+  </form>
+</div>
+
