@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("atlasTaskflow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc08ed35211032b3c731ec8ab60eea27fa6925ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("atlasTaskflow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("atlasTaskflow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

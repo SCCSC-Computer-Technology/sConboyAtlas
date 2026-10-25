@@ -1,0 +1,135 @@
+@model IEnumerable<atlasTaskflow.Models.StudentClassViewModel>
+
+@{
+    ViewData["Title"] = "Student Dashboard";
+    var tasks = ViewBag.Tasks as IEnumerable<atlasTaskflow.Models.TaskModel> ?? Enumerable.Empty<atlasTaskflow.Models.TaskModel>();
+    var assignments = ViewBag.Assignments as IEnumerable<atlasTaskflow.Models.StudentAssignmentModel> ?? Enumerable.Empty<atlasTaskflow.Models.StudentAssignmentModel>();
+    var dueDates = ViewBag.CalendarDueDates as HashSet<DateTime> ?? new HashSet<DateTime>();
+    var month = DateTime.Today;
+    var firstDay = new DateTime(month.Year, month.Month, 1);
+    var daysInMonth = DateTime.DaysInMonth(month.Year, month.Month);
+}
+
+<h1>Student Dashboard</h1>
+<p>Manage your personal tasks and view assignments from your instructors.</p>
+
+<div class="row g-4 mt-4">
+    <div class="col-12 col-lg-5 order-lg-2">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="h4">@month.ToString("MMMM yyyy")</h2>
+                <div class="calendar-grid mt-4">
+                    @foreach (var dayName in new[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" })
+                    {
+                        <div class="calendar-heading">@dayName</div>
+                    }
+                    @for (var blank = 0; blank < (int)firstDay.DayOfWeek; blank++)
+                    {
+                        <div class="calendar-day calendar-empty"></div>
+                    }
+                    @for (var day = 1; day <= daysInMonth; day++)
+                    {
+                        var date = new DateTime(month.Year, month.Month, day);
+                        <div class="calendar-day @(date.Date == DateTime.Today ? "calendar-today" : "")" data-calendar-date="@date.ToString("yyyy-MM-dd")">
+                            <span>@day</span>
+                            @if (dueDates.Contains(date.Date))
+                            {
+                                <span class="calendar-dot"></span>
+                            }
+                        </div>
+                    }
+                </div>
+                <p class="text-muted small mt-3 mb-0">Dots mark days with tasks or assignments due.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-7 order-lg-1">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h4 mb-0">Focus List</h2>
+            <a class="btn btn-sm btn-primary" asp-controller="Task" asp-action="Create">Create Task</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle" data-sortable-table>
+                <thead>
+                    <tr>
+                        <th><button class="sort-button" type="button" data-sort="name">Name</button></th>
+                        <th><button class="sort-button" type="button" data-sort="date">Due Date</button></th>
+                        <th><button class="sort-button" type="button" data-sort="type">Source</button></th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var assignment in assignments)
+                    {
+                        <tr class="@(assignment.IsComplete ? "focus-row-complete" : "")" data-name="@assignment.Assignment?.Name" data-date="@assignment.Assignment?.DueDate.ToString("yyyy-MM-dd")" data-type="Instructor">
+                            <td class="focus-task-name">@assignment.Assignment?.Name</td>
+                            <td>@assignment.Assignment?.DueDate.ToShortDateString()</td>
+                            <td>@assignment.Assignment?.Classroom?.Name</td>
+                            <td data-task-status>@(assignment.IsComplete ? "Complete" : "Open")</td>
+                            <td>
+                                <form asp-controller="Task" asp-action="ToggleAssignmentComplete" method="post">
+                                    <input type="hidden" name="id" value="@assignment.Id" />
+                                    <input class="task-complete-checkbox" type="checkbox" @(assignment.IsComplete ? "checked" : "") data-completion-toggle aria-label="Mark assignment complete" />
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                    @foreach (var task in tasks)
+                    {
+                        <tr class="@(task.IsComplete ? "focus-row-complete" : "")" data-name="@task.Name" data-date="@task.DueDate.ToString("yyyy-MM-dd")" data-type="Personal">
+                            <td class="focus-task-name">@task.Name</td>
+                            <td>@task.DueDate.ToShortDateString()</td>
+                            <td>Personal</td>
+                            <td data-task-status>@(task.IsComplete ? "Complete" : "Open")</td>
+                            <td>
+                                <form asp-controller="Task" asp-action="ToggleComplete" method="post">
+                                    <input type="hidden" name="id" value="@task.Id" />
+                                    <input class="task-complete-checkbox" type="checkbox" @(task.IsComplete ? "checked" : "") data-completion-toggle aria-label="Mark task complete" />
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        @if (!tasks.Any() && !assignments.Any())
+        {
+            <p class="text-muted">You do not have any tasks yet.</p>
+        }
+    </div>
+</div>
+
+<h2 class="h4 mt-5">My Classes</h2>
+
+@if (!Model.Any())
+{
+    <p class="text-muted">You are not enrolled in any classes yet.</p>
+}
+else
+{
+    <div class="table-responsive dashboard-table-spacing">
+        <table class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Course Code</th>
+                    <th>Instructor</th>
+                    <th>Assignments</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var classroom in Model)
+                {
+                    <tr class="position-relative">
+                        <td><a class="stretched-link text-decoration-none" asp-action="Class" asp-route-id="@classroom.Id">@classroom.Name</a></td>
+                        <td>@classroom.Code</td>
+                        <td>@classroom.InstructorName</td>
+                        <td>@classroom.AssignmentCount</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

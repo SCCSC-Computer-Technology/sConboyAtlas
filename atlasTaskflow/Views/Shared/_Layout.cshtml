@@ -27,13 +27,31 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
 
+                        @if (User.IsInRole("Admin"))
+                        {
                          <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Admin Dashboard</a>
                         </li>
-
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Organization" asp-action="Index">Organizations</a>
+                        </li>
+                        }
+
+                        @if (User.IsInRole("Instructor"))
+                        {
+                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Instructor" asp-action="Index">Instructor Dashboard</a>
                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="InstructorClass" asp-action="Index">My Classes</a>
+                         </li>
+                        }
+                        @if (User.IsInRole("Student"))
+                        {
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Student" asp-action="Index">Student Dashboard</a>
+                        </li>
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

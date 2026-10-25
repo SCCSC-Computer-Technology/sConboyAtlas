@@ -1,0 +1,32 @@
+@model IEnumerable<atlasTaskflow.Models.ClassroomModel>
+
+@{
+    ViewData["Title"] = "My Classes";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>My Classes</h1>
+    <a class="btn btn-primary" asp-action="Create">Create Class</a>
+</div>
+
+@if (!Model.Any())
+{
+    <p>You have not created any classes yet.</p>
+}
+else
+{
+    <div class="row g-3">
+        @foreach (var classroom in Model)
+        {
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5">@classroom.Name</h2>
+                        <p class="text-muted">@classroom.Code</p>
+                        <a class="btn btn-outline-primary" asp-action="Details" asp-route-id="@classroom.Id">Open Class</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

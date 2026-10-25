@@ -1,0 +1,27 @@
+@model atlasTaskflow.Models.ClassroomModel
+
+@{
+    ViewData["Title"] = "Create Class";
+}
+
+<h1>Create Class</h1>
+
+<form asp-action="Create" method="post" class="mt-4" style="max-width: 600px;">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Class Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Code" class="form-label">Class Code</label>
+        <input asp-for="Code" class="form-control" />
+        <span asp-validation-for="Code" class="text-danger"></span>
+    </div>
+    <button class="btn btn-primary" type="submit">Create Class</button>
+    <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -3416,11 +3416,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shawn\\Documents\\atlasTaskflow\\atlasTaskflow.csproj",
+      "projectUniqueName": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\atlasTaskflow\\atlasTaskflow.csproj",
       "projectName": "atlasTaskflow",
-      "projectPath": "C:\\Users\\Shawn\\Documents\\atlasTaskflow\\atlasTaskflow.csproj",
+      "projectPath": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\atlasTaskflow\\atlasTaskflow.csproj",
       "packagesPath": "C:\\Users\\Shawn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Shawn\\Documents\\atlasTaskflow\\obj\\",
+      "outputPath": "C:\\Users\\Shawn\\Documents\\sConboyAtlas\\atlasTaskflow\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

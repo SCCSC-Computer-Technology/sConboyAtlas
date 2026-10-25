@@ -41,6 +41,54 @@ html {
     font-size: 16px;
 }
 
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.35rem;
+}
+
+.calendar-heading {
+    color: var(--lux-text-muted);
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.calendar-day {
+    align-items: center;
+    border: 1px solid var(--lux-border);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 3rem;
+}
+
+.calendar-empty {
+    border-color: transparent;
+}
+
+.calendar-today {
+    border-color: var(--lux-accent);
+}
+
+.calendar-day {
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.calendar-hover {
+    border-color: var(--lux-accent-hover);
+    box-shadow: 0 0 0 3px rgba(192, 177, 151, 0.18), 0 0 1.25rem rgba(169, 155, 130, 0.2);
+    transform: translateY(-2px);
+}
+
+.calendar-dot {
+    background-color: var(--lux-accent);
+    border-radius: 50%;
+    height: 0.35rem;
+    margin-top: 0.2rem;
+    width: 0.35rem;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -178,7 +226,53 @@ header {
 
 main {
     flex: 1 0 auto;
-    padding-block: 2.5rem 3.5rem;
+    padding-block: 2.5rem 5rem;
+}
+
+.dashboard-table-spacing {
+    margin-bottom: 4rem;
+}
+
+.sort-button {
+    background: transparent;
+    border: 0;
+    color: var(--lux-text-muted);
+    font-size: inherit;
+    font-weight: 600;
+    letter-spacing: inherit;
+    padding: 0;
+    text-transform: inherit;
+}
+
+.sort-button:hover,
+.sort-button:focus {
+    color: var(--lux-accent-hover);
+}
+
+.focus-row-complete {
+    color: var(--lux-text-muted);
+    opacity: 0.58;
+    transition: color 180ms ease, opacity 180ms ease;
+}
+
+.focus-row-complete .focus-task-name {
+    text-decoration: line-through;
+}
+
+.focus-task-name {
+    text-decoration-color: transparent;
+    transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.focus-task-name-complete {
+    text-decoration-color: currentColor;
+}
+
+.task-complete-checkbox {
+    accent-color: var(--lux-accent);
+    cursor: pointer;
+    height: 1.05rem;
+    width: 1.05rem;
 }
 
 .masthead {

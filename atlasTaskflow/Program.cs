@@ -1,4 +1,6 @@
 using atlasTaskflow.Data;
+using atlasTaskflow.Models;
+using atlasTaskflow.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,8 +18,15 @@ namespace atlasTaskflow
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            builder.Services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+                options.AddPolicy("InstructorOnly", policy => policy.RequireRole("Instructor"));
+                options.AddPolicy("StudentOnly", policy => policy.RequireRole("Student"));
+            });
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();

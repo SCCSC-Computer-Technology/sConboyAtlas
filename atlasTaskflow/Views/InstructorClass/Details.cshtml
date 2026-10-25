@@ -1,0 +1,72 @@
+@model atlasTaskflow.Models.ClassroomModel
+
+@{
+    ViewData["Title"] = Model.Name;
+    var students = ViewBag.Students as IEnumerable<atlasTaskflow.Models.ApplicationUser> ?? Enumerable.Empty<atlasTaskflow.Models.ApplicationUser>();
+    var availableStudents = ViewBag.AvailableStudents as IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem> ?? Enumerable.Empty<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>();
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1>@Model.Name</h1>
+        <p class="text-muted mb-0">@Model.Code</p>
+    </div>
+    <a class="btn btn-primary" asp-action="CreateAssignment" asp-route-id="@Model.Id">Create Assignment</a>
+</div>
+
+<h2 class="h4">Students</h2>
+<form asp-action="AddStudent" method="post" class="row g-2 mb-4" style="max-width: 700px;">
+    <input type="hidden" name="classroomId" value="@Model.Id" />
+    <div class="col-sm-8">
+        <select name="studentId" class="form-select" required>
+            <option value="">Choose a student</option>
+            @foreach (var student in availableStudents)
+            {
+                <option value="@student.Value">@student.Text</option>
+            }
+        </select>
+    </div>
+    <div class="col-sm-4">
+        <button class="btn btn-outline-primary" type="submit">Add Student</button>
+    </div>
+</form>
+
+@if (!students.Any())
+{
+    <p>No students are enrolled yet.</p>
+}
+else
+{
+    <ul class="list-group mb-4" style="max-width: 700px;">
+        @foreach (var student in students)
+        {
+            <li class="list-group-item">@student.Email</li>
+        }
+    </ul>
+}
+
+<h2 class="h4">Assignments</h2>
+@if (!Model.Assignments.Any())
+{
+    <p>No assignments have been created yet.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Due Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var assignment in Model.Assignments.OrderBy(x => x.DueDate))
+            {
+                <tr>
+                    <td>@assignment.Name</td>
+                    <td>@assignment.DueDate.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

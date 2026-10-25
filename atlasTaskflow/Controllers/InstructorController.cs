@@ -1,9 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using atlasTaskflow.Models;
 using atlasTaskflow.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace atlasTaskflow.Controllers
 {
+    [Authorize(Policy = "InstructorOnly")]
     public class InstructorController : Controller
     {
 
@@ -17,9 +20,13 @@ namespace atlasTaskflow.Controllers
 
 
         // GET: InstructorController
-        public ActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var courses = _context.Courses.ToList();
+            // load the instructor's courses for the page
+            var courses = await _context.Courses
+                .AsNoTracking()
+                .OrderBy(course => course.Name)
+                .ToListAsync();
 
             return View(courses);
         }
@@ -29,15 +36,23 @@ namespace atlasTaskflow.Controllers
 
         public IActionResult Create()
         {
+            // show the course form
             return View();
         }
 
         [HttpPost]
-        public IActionResult Create(CourseModel course)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(CourseModel course)
         {
+            // return the form if the course data is not valid
+            if (!ModelState.IsValid)
+            {
+                return View(course);
+            }
 
+            // save the new course
             _context.Courses.Add(course);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return RedirectToAction("Index");
         }

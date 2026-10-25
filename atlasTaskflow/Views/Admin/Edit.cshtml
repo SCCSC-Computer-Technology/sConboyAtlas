@@ -1,4 +1,5 @@
 @model atlasTaskflow.Models.InstructorModel
+@using Microsoft.AspNetCore.Mvc.Rendering
 
 @{
     ViewData["Title"] = "Edit Instructor";
@@ -36,6 +37,13 @@
     <div class="mb-4">
       <label for="Subject" class="form-label fw-semibold text-secondary">Subject / Department</label>
       <input type="text" class="form-control form-control-lg" id="Subject" name="Subject" placeholder="e.g., Computer Science" value="@Model.Subject" required>
+    </div>
+
+    <div class="mb-4">
+      <label for="OrganizationId" class="form-label fw-semibold text-secondary">Organization</label>
+      <select asp-for="OrganizationId" asp-items="@(ViewBag.Organizations as IEnumerable<SelectListItem>)" class="form-select form-select-lg">
+        <option value="">Unassigned</option>
+      </select>
     </div>
 
     @* submit button *@

@@ -1,0 +1,34 @@
+@model atlasTaskflow.Models.AssignmentModel
+
+@{
+    ViewData["Title"] = "Create Assignment";
+    var classroom = ViewBag.Classroom as atlasTaskflow.Models.ClassroomModel;
+}
+
+<h1>Create Assignment</h1>
+<p class="text-muted">@classroom?.Name</p>
+
+<form asp-action="CreateAssignment" method="post" class="mt-4" style="max-width: 600px;">
+    <input asp-for="ClassroomId" type="hidden" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Assignment Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DueDate" class="form-label"></label>
+        <input asp-for="DueDate" class="form-control" />
+        <span asp-validation-for="DueDate" class="text-danger"></span>
+    </div>
+    <button class="btn btn-primary" type="submit">Create Assignment</button>
+    <a class="btn btn-secondary" asp-action="Details" asp-route-id="@Model.ClassroomId">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
