@@ -595,4 +595,3 @@ C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\atlasTaskf
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\ref\atlasTaskflow.dll
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\bin\Debug\net10.0\atlasTaskflow.exe
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\bin\Debug\net10.0\dotnet-tools.json
-C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

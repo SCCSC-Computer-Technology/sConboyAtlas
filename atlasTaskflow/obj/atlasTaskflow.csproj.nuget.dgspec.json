@@ -37,6 +37,9 @@
           }
         },
         "warningProperties": {
+          "noWarn": [
+            "NU1902"
+          ],
           "warnAsError": [
             "NU1605"
           ]
@@ -77,6 +80,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[10.0.13, )"
+            },
+            "System.Security.Cryptography.Pkcs": {
+              "target": "Package",
+              "version": "[9.0.21, )"
             }
           },
           "imports": [
