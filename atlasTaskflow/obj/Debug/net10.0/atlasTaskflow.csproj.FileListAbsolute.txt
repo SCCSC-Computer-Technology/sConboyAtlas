@@ -518,7 +518,9 @@ C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\nezrqnk58p-{0}-muycvpuwrr-muycvpuwrr.gz
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\v0zgfp0y55-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\yfc7ypekbg-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\gs8aj2umrl-{0}-s3sleam25z-s3sleam25z.gz
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\478ery21xg-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\nmpqz7vytv-{0}-ja3for0ltz-ja3for0ltz.gz
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\sbk8d16jhb-{0}-bqjiyaj88i-bqjiyaj88i.gz
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\eat7r4iaak-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\e7toighg0z-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -592,5 +594,5 @@ C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\atlasTaskf
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\atlasTaskflow.genruntimeconfig.cache
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\ref\atlasTaskflow.dll
 C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\bin\Debug\net10.0\atlasTaskflow.exe
-C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\gs8aj2umrl-{0}-s3sleam25z-s3sleam25z.gz
-C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\compressed\nmpqz7vytv-{0}-ja3for0ltz-ja3for0ltz.gz
+C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\bin\Debug\net10.0\dotnet-tools.json
+C:\Users\Shawn\Documents\sConboyAtlas\atlasTaskflow\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
